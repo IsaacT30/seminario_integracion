@@ -1,3 +1,3 @@
-#seminario_Integracion
+# seminario_integracion
 
-Autor: Torres Cepeda, Isaac Alejandro
+AUTOR: TORRES CEPEDA, ISAAC ALEJANDRO
