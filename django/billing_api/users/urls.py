@@ -14,7 +14,3 @@ urlpatterns = [
     path('auth/refresh/', TokenRefreshView.as_view()),
     path('', include(router.urls)),
 ]
-
-urlpatterns = [
-    path('admin/', UserAdminViewSet.as_view({'get': 'list', 'post': 'create'}), name='user-admin'),
-]

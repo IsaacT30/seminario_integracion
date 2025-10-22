@@ -10,8 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
-import os
 from pathlib import Path
+import os
+from datetime import timedelta
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--hv&unul5ya82^+q$n#xyru4*n8d&ycyy%v%z)0zbu!m09*pl6'
+SECRET_KEY = 'django-insecure-mnf^@85z%+p#w+6cxf8w+w550^vwbn$z6n^sva-6f1y0ii&1k^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,12 +81,12 @@ WSGI_APPLICATION = 'billing_api.wsgi.application'
 DATABASES={
   'default':{
     'ENGINE':'django.db.backends.postgresql',
-    'NAME':os.getenv('DB_NAME','billingdb'),
+    'NAME':os.getenv('DB_NAME','programacion'),
     'USER':os.getenv('DB_USER','postgres'),
-    'PASSWORD':os.getenv('DB_PASS','mypassword'),
+    'PASSWORD':os.getenv('DB_PASS','admin'),
     'HOST':os.getenv('DB_HOST','localhost'),
     'PORT':os.getenv('DB_PORT','5432')
-  }
+    }
 }
 
 

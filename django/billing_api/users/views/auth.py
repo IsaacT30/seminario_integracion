@@ -1,3 +1,4 @@
+# users/views/auth.py
 from rest_framework import generics, permissions
 from django.contrib.auth.models import User
 from users.serializers.register import RegisterSerializer
