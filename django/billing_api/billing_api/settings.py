@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'users',
+    'catalog',
 ]
 
 MIDDLEWARE = [
@@ -81,9 +82,9 @@ WSGI_APPLICATION = 'billing_api.wsgi.application'
 DATABASES={
   'default':{
     'ENGINE':'django.db.backends.postgresql',
-    'NAME':os.getenv('DB_NAME','programacion'),
+    'NAME':os.getenv('DB_NAME','Programacion_IV'),
     'USER':os.getenv('DB_USER','postgres'),
-    'PASSWORD':os.getenv('DB_PASS','admin'),
+    'PASSWORD':os.getenv('DB_PASS','Isaac2006'),
     'HOST':os.getenv('DB_HOST','localhost'),
     'PORT':os.getenv('DB_PORT','5432')
     }
