@@ -1,3 +1,4 @@
+# catalog/views/product.py
 from rest_framework import viewsets, filters
 from catalog.models import Product
 from catalog.serializers import ProductSerializer

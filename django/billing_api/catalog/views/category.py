@@ -1,3 +1,4 @@
+# catalog/views/category.py
 from rest_framework import viewsets, filters
 from catalog.models import Category
 from catalog.serializers import CategorySerializer

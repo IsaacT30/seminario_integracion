@@ -1,3 +1,4 @@
+# catalog/urls.py
 from rest_framework.routers import DefaultRouter
 from catalog.views.category import CategoryViewSet
 from catalog.views.product import ProductViewSet

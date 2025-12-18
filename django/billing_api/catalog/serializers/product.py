@@ -1,3 +1,4 @@
+# catalog/serializers/product.py
 from rest_framework import serializers
 from catalog.models import Product, Category
 
